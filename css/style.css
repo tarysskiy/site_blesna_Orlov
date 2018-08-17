@@ -1,0 +1,645 @@
+body {
+	min-width: 1040px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Arial", sans-serif;
+    color: #404040;
+    background-color: white;
+}
+
+/*Базовые параметры шапки и подвала сайта*/
+.page-header, 
+.page-footer {
+	background-color:black;
+	color:#c3c3c3;
+}
+
+/*Контейнер,выравнивющий тело сайта по средине*/
+.container {
+	width:1020px;
+	margin:0px auto;
+}
+
+/*Псевдораспорка */
+.clearfix::after {
+	display:table;
+    content:"";
+    clear:both;
+}
+
+/*Заголовки разделов (h2)*/
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+    margin-right: 180px;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    font-family: "Georgia", serif;
+    color:#099420;    /* #a38b70;*/
+}
+
+/*Кнопки*/
+.btn {
+    display: inline-block;
+    width: 146px;
+    padding: 10px;
+    font: inherit; /*наследует значение родителя*/
+    vertical-align: top;
+    text-align: center;
+    color: #099420;
+    text-transform: uppercase; /*заглавные пуквы*/
+    text-decoration: none;
+    word-wrap: break-word; /*автоматический перенос текста*/
+    border: 2px solid #099420;
+    border-radius: 2px; /*скругляем рамки*/
+}
+
+/*Состояние кнопки при наведении*/
+.btn:hover {
+    color: #8d745a;
+    border-color:#8d745a;
+}
+
+/*Состояние кнопки при нажатии*/
+.btn:active {
+    color: rgba(141, 116, 90, 0.3);
+    border-color: #8d745a;
+}
+
+/************************** Шапка сайта ***************************************/
+
+/*Шапка сайта*/
+.page-header {	
+	min-height: 550px; /*минимальная высота шапки*/
+    padding-top: 35px;
+	background:url('../img/6.jpg') no-repeat ; /* выходим из папки css на уровень вверх, и заходим в папку img */
+	background-size: cover; /*изображению задаются минимально возможные размеры, при которых оно закроет всю фоновую область блока;*/
+}
+
+/*Верхняя часть шапки (лого+меню)*/
+.header-top {
+	margin-bottom:125px;
+}
+
+/*Блок "Логотип сайта"*/	
+.header-logo {
+	float:left;
+	width:205px;
+	height:55px;
+	padding-right:20px;
+}
+
+/*Размер изображения в блоке "логотип"*/
+.header-logo img {
+    width: 205px;
+    height: 55px;
+}
+
+/*Главное меню*/
+.header-nav {
+	float:left;
+	width:700px;
+	padding:0px;
+	margin: 5px 0px 0px 95px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+/*Пункты меню*/
+.header-nav li {
+	list-style:none; /*отключаем маркер списка*/
+	text-transform: uppercase; /*Делаем все буквы прописными*/
+	display:inline-block; /*делам список однострочным*/
+	margin-right:15px;
+}
+
+/*Последний пункт в списке*/
+.header-nav li:last-child {
+    margin-right: 0;
+}
+
+/*Ссылки главного меню*/
+.header-nav a {
+	color:white;
+	text-decoration:none; /*Убираем подчеркивание у ссылок*/
+}
+
+/*Ссылка главного меню при наведении*/
+.header-nav a:hover {
+	color: #099420;
+	text-decoration: underline; /*Возвращаем ссылкам подчеркивание*/
+}
+
+/*Ссылка главного меню в активном состоянии*/
+.header-nav a:active {
+	color: rgba(255, 255, 255, 0.3); /*Делаем ее полупрозрачной*/
+}
+
+/*Промо надпись*/
+.caption-site {
+	font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    font-family: "Georgia", serif;
+    text-align: center;
+}
+
+.caption-site a{
+	color: #ffffff;
+    text-decoration: none;
+}
+
+/************************************************ Конец шапки сайта *********************************************/
+
+/************************************************Раздел "Преимущества"******************************************/
+
+/*Раздел "Преимущества*/
+.advantage {
+	padding-top:50px;
+    padding-bottom:55px;
+    background-color:rgba(3, 163, 11,0.1);
+}
+
+/*Список преимуществ*/
+.advantage ul  {
+	margin:0px;
+	padding:0px;
+	list-style: none; /*убираем маркеры*/
+}
+
+/*Элементы (значения) в разделе "Преимущество"*/
+.advantage-item {
+    float:left;
+    margin: 0px;
+    padding: 90px 30px 0px 30px; 
+    width:279px;	
+	text-align:center;
+	border-left: 1px solid #d9d9d9;
+}
+
+/*Загаловки у элементов списка преимуществ*/
+.advantage-item h2 {
+	text-align:center;
+}
+
+/*Первый элемент списка преимуществ*/
+.advantage-item:first-child {
+	border-color:transparent;
+}
+
+/*Абзытцы в списке преимуществ*/
+.advantage-item p {
+	font-size: 16px;
+}
+
+/*Заголовки в разделе "Преимущества"*/
+.advantage-title {
+    margin: 0;
+    margin-bottom: 20px;
+	font-family:"Georgia", serif;
+	font-weight:bold;
+	font-size:30px;
+	line-height:30px;
+	color:#a38b70;
+}
+
+/*****************************Конец блока "Преиущества"****************************/
+
+/******************************Раздел "Наши товары********************************/
+/*Раздел "Наши товары*/
+.catalog {
+	padding-top: 20px;
+    padding-bottom: 50px;
+	background-color:rgba(210, 213, 219,0.3);
+}
+
+/*Контейнер центровщик в разделе "Товары"*/
+.catalog .container {
+    position: relative; /*Задаем относительное позиционирование*/
+}
+
+/*Кнопка "Каталог"*/
+.btn-to-catalog {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/*Блок, в котором отображается список товаров*/
+.catalog-item {
+    margin-bottom: -45px;
+}
+
+/*Элементы списка товаров*/
+.tovar {
+    position: relative; /*относительное позиционирование*/
+	float:left;
+	width: 262px;
+    margin-right: 30px;
+    margin-bottom:20px;
+    padding:221px 22px 15px 22px;
+    font-size:16px;
+    border: 1px solid #099420;
+}
+
+/*Последний элемент списка*/
+.tovar:last-child {
+	margin-right:0px;
+}
+
+/*Изображение товара*/
+.tovar img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 306px;
+    height: 206px;
+}
+
+/*Название товара*/
+.tovar h3 {
+    float:left;
+    max-width:205px;
+    margin: 0px 0px 20px 0px;
+	font-size:16px;
+	color:#000000;
+}
+
+/*Цена товара*/
+.tovar-price {
+    float: right;
+    max-width: 55px;
+    margin-bottom: 20px;
+}
+
+/*Кнопки Описание + Купить*/
+.tovar .btn {
+    width: 101px;
+    color: #ffffff;
+    background-color: #a38b70;
+}
+
+/*При наведении на кнопку*/
+.tovar .btn:hover {
+    background-color: #8d745a;
+}
+
+/*При нажатии на кнопку*/
+.tovar .btn:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/*Кнопка "Описание"*/
+.tovar .btn-info {
+    float: left;
+    clear: left; /*чтобы кнопка всегда начиналась на новой строке после предыдущего плавающего блока с ценой*/
+}
+
+/*Кнопка "Купить"*/
+.tovar .btn-buy {
+    float: right;
+}
+
+/*********************Конец раздела "Список товаров"*************/
+
+/*************************Раздел "Отзывы"**************************/
+/*Блок отзывы*/
+.reviews {
+    padding-top:20px;
+    padding-bottom:50px;
+    background-color:rgba(3, 163, 11,0.1);
+}
+
+/*Контейнер центровщик в разделе "Отзывы"*/
+.reviews .container {
+    position: relative; /*Задаем относительное позиционирование*/
+}
+
+/*Кнопка "Все отзывы"*/
+.btn-to-all-reviews {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*Элементы списка отзывов*/
+.review-item {
+    width:377px;
+    margin: 0px 80px 0px 0px;
+    padding: 0px 0px 0px 50px;
+    float: left;
+    font-size: 16px;
+    border-left: 3px solid #099420;
+}
+
+/*Текст отзывов*/
+.review-item p {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/*Информация об авторе отзыва*/
+.review-author {
+    font-weight: bold;
+    font-style: italic;
+}
+/*********************Конец раздела "Отзывы"*************/
+
+/*********************Раздел Контакты *******************/
+
+.contacts {
+	padding-top:20px;
+    padding-bottom:50px;
+    background-color:rgba(210, 213, 219,0.3);
+}
+
+/*Карта*/
+.contacts-map {
+	width: 1020px;
+	heigth: 500px;
+	border: 2px solid #099420;
+}
+
+/*********************Конец раздела "Контакты"***********/
+
+/*********************Раздел Обратная связь *******************/
+.feedback {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color:rgba(3, 163, 11,0.1);
+    background-image: /*рисуем зубцы у шапки*/
+    linear-gradient(45deg, transparent 50% white 50%),
+    linear-gradient(-45deg, transparent 50%, white 50%);
+    background-repeat: repeat-x;
+    background-position: 0 0, 0 0, 0 100%, 0 100%;
+    background-size: 10px 12px;
+}
+
+/*Контейнер центровщик*/
+.feedback .container {
+    position: relative;
+}
+
+.feedback .section-title {
+    max-width: 500px;
+}
+
+.feedback-tip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 500px;
+    font-size: 16px;
+}
+
+/*Группа элементов на форме обратной связи (все элементы кроме кнопки)*/
+.feedback-form-group {
+    display: block;
+    padding: 7px 8px;
+    margin-bottom: 7px;
+}
+
+/*Надписи на форме*/
+.feedback-form-group label {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 300px;
+    padding: 6px 0px;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+/*Поля формы*/
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form select,
+.feedback-form textarea {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 8px 9px;
+    padding-right: 30px;
+    width: 100%;
+    height: 54px;
+    font: inherit;
+    color: inherit;
+    border: 2px solid #099420;
+}
+
+/*При наведении на поля*/
+.feedback-form input[type="text"]:hover,
+.feedback-form input[type="email"]:hover,
+.feedback-form select:hover,
+.feedback-form textarea:hover {
+    border-color: #bebebe;
+}
+
+/*При выборе поля*/
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #8d745a;
+}
+
+/*Текст сообщения*/
+.feedback-form textarea {
+    min-height: 120px;
+}
+
+/*Кнопка "Отправить"*/
+.feedback-form .btn {
+    margin-left: 10px;
+    margin-top: 20px;
+    color: #099420;
+    background-color: rgba(3, 163, 11,0.1);
+}
+
+/*Кнопка "Отправить" при наведении*/
+.feedback-form .btn:hover {
+    color: #8d745a;
+}
+
+/*Кнопка "Отправить" при нажатии*/
+.feedback-form .btn:active {
+    color: rgba(141, 116, 90, 0.5);
+}
+
+/*********************Конец раздела "Обратная связь"***********/
+
+/*********************Подвал сайта****************************/
+.page-footer {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-image: /*рисуем зубцы у шапки*/
+    linear-gradient(45deg, transparent 50%, white 50%),
+    linear-gradient(-45deg, transparent 50%, white 50%);
+    background-repeat: repeat-x;
+    background-position: 0 0, 0 0, 0 100%, 0 100%;
+    background-size: 10px 12px;
+}
+
+/*Логотип*/
+.footer-logo {
+    float:left;
+    width:205px;
+    height: 55px;
+}
+
+/*Задаем фиксированый размер изображения логотипа*/
+.footer-logo img {
+    width: 205px;
+    height: 55px;
+}
+
+/*Верхний блок подвала (логотип)*/
+.footer-top {
+    margin-bottom: 20px;
+}
+
+/*Нижний блок подвала (социальные сети+копирайт)*/
+.footer-bottom {
+    padding-top: 40px;
+}
+
+/*Середина подвала (пункт меню)*/
+.footer-middle {
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.footer-middle,
+.footer-bottom {
+    border-top: 1px solid #5e5e5e;
+}
+
+/*Меню подвала*/
+.footer-menu {
+	float:left;
+	width:750px;
+	padding:0px;
+	margin: 0px 0px 0px 10px;
+}
+
+/*Пункты меню подвала*/
+.footer-menu li {
+	list-style:none; /*отключаем маркер списка*/
+	text-transform: uppercase; /*Делаем все буквы прописными*/
+	display:inline-block; /*делам список однострочным*/
+	margin-right:15px;
+}
+
+/*Ссылки меню подвала*/
+.footer-menu a {
+	color:white;
+	text-decoration:none; /*Убираем подчеркивание у ссылок*/
+}
+
+/*Меню подвала при наведении*/
+.footer-menu a:hover {
+	text-decoration: underline; /*Возвращаем ссылкам подчеркивание*/
+}
+
+/*Меню подвала в активном состоянии*/
+.footer-menu a:active {
+	color: rgba(255, 255, 255, 0.3); /*Делаем ее полупрозрачной*/
+}
+
+/*Блок социальные сети*/
+.footer-social {
+    float: left;
+    width: 490px;
+    font-size: 0px;
+}
+
+/*Надпись в блоке "Социальные сети"*/
+.footer-social b {
+    margin-right: 40px;
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    color: #a38b70;
+}
+
+/*Блок "Наш адрес"*/
+.footer-contacts {
+    width: 850px;
+    color: #ffffff;
+}
+
+/*Заголовок "Наш Адрес"*/
+.footer-contacts .title {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+ /*Блок текста + иконок  "Наш адрес*/ 
+.footer-contacts .item {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+/*Адрес электронной почты в разделе "Наш адрес" (подвал)*/
+.footer-contacts a {
+    color: #e2534b;
+}
+
+/* ДОБАВИТЬ ИКОНКИ*/
+.footer-contacts .icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+    background:url('../img/footer-contact-icon.png') no-repeat;
+}
+
+/*Иконка "Метка на карте"*/
+.footer-contacts .icon-location {
+    background-position: -2px -5px;
+}
+
+/*Иконка "Телефон"*/
+.footer-contacts .icon-phone {
+    background-position: 0px -43px; 
+}
+
+/*Иконка "Конверт"*/
+.footer-contacts .icon-email {
+    background-position: -46px -4px;
+}
+
+
+/*Иконки социальных сетей*/
+.social-btn {
+    display: inline-block;
+    width: 56px;
+    margin-right: 10px;
+    height: 56px;
+    vertical-align: middle;
+    background:url('../img/vk.png') no-repeat;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/*Иконка Вконтакте*/
+.social-btn-vk {
+    background-position: -2px -2px; /*Кординаты на спрайте*/
+}
+
+/*При наведении на иконку соц. сети*/
+/*.social-btn:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+/*}
+
+/*При нажатии на иконку соц. сети*/
+/*.social-btn:active {
+    border-color: #ffffff;
+    opacity: 0.1;
+}*/
+
+
+
